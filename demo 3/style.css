@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    color: ;
+}
+
+a:hover {
+    color: 
+}
+
+a::after {
+    color: ;
+}
+
+body {
+    font-family: ;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+
+}
+
+.header-nav {
+    justify-content: space-between;
+}
+
+.tools-section {
+    display: grid;
+}
+
+.tools-grid-container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
