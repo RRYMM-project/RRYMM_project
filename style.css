@@ -1,3 +1,16 @@
+/* COLOR SCHEME */
+:root{
+    --light-shade: rgb(249,249,250);
+    --light-accent: rgb(205,199,203);
+    --info-color: rgb(238,199,124);
+    --dark-accent: rgb(127,161,171);
+    --dark-shade: rgb(241,135,88);
+    --active-color: rgb(241,135,88);
+    --default-bcg: rgb(255,255,255);
+    --default-text-color: rgb(0,0,0);
+    --brand-font: "Monoton", serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +30,13 @@ a::after {
 }
 
 body {
-    font-family: ;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
+
 
 .main-header {
     display: flex;
