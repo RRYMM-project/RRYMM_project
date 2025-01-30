@@ -1,16 +1,6 @@
-:root{
-    --light-shade: rgb(249,249,250);
-    --light-accent: rgb(205,199,203);
-    --info-color: rgb(238,199,124);
-    --dark-accent: rgb(127,161,171);
-    --dark-shade: rgb(241,135,88);
-    --active-color: rgb(241,135,88);
-    --default-bcg: rgb(255,255,255);
-    --default-text-color: rgb(0,0,0);
-    --brand-font: "Monoton", serif;
-}
 
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +8,6 @@ body{
     background-color: var(--light-shade);
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
 }
 
 .login-container {
