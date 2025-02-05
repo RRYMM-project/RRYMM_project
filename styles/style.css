@@ -5,10 +5,12 @@
     --info-color: rgb(238,199,124);
     --dark-accent: rgb(127,161,171);
     --dark-shade: rgb(241,135,88);
-    --active-color: rgb(241,135,88);
+    --active-color: rgb(244,67,54);
     --default-bcg: rgb(255,255,255);
     --default-text-color: rgb(0,0,0);
-    --brand-font: "Monoton", serif;
+    --pad-right: 13.75rem;
+    --pad-left: 13.75rem;
+    --main-font: "Roboto", serif;
 }
 
 * {
@@ -18,11 +20,25 @@
 
 a {
     cursor: pointer;
-    color: ;
+    color: var(--dark-shade);
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+h2{
+    font-size: 1.825rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 a:hover {
-    color: 
+    color: var(--active-color);
+}
+
+.active-link{
+    color: var(--active-color);
 }
 
 a::after {
@@ -30,7 +46,7 @@ a::after {
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: var(--main-font);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -49,15 +65,4 @@ body {
 
 .header-nav {
     justify-content: space-between;
-}
-
-.tools-section {
-    display: grid;
-}
-
-.tools-grid-container {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
 }
