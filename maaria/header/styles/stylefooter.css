@@ -1,0 +1,65 @@
+:root{
+    --light-shade: rgb(249,249,250);
+    --light-accent: rgb(205,199,203);
+    --info-color: rgb(238,199,124);
+    --dark-accent: rgb(127,161,171);
+    --dark-shade: rgb(241,135,88);
+    --active-color: rgb(244,67,54);
+    --default-bcg: rgb(255,255,255);
+    --default-text-color: rgb(0,0,0);
+    --pad-right: 13.75rem;
+    --pad-left: 13.75rem;
+    --main-font: "Roboto", serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+    /* FOOTER */
+
+footer {
+    height: 27.38rem;
+    padding-top: 2.5rem;
+    padding-left: var(--pad-left);
+    padding-right: var(--pad-right);
+    background-color: var(--light-shade);
+    display: grid;
+    grid-template-rows: repeat(3, 3rem);
+    row-gap: 1.81rem;
+}
+
+.footer-text {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--dark-shade);
+    max-width: 18.7rem;
+    height: 3rem;
+}
+
+.input-email {
+    height: 3rem;
+    width: 20.38rem;
+}
+
+.btn-yellow {
+    width: 10.62rem;
+    height: 3rem;
+    background-color: var(--info-color);
+    border-radius: 1.88rem;
+    border: none;
+    color: var(--light-shade);
+}
+
+.footer-h3 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 1.69rem;
+    color: var(--info-color);
+    text-transform: uppercase;
+}
