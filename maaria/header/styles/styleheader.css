@@ -44,6 +44,8 @@ body {
 .main-header {
     display: flex;
     height: 4.5rem;
+    padding-left: var(--pad-left);
+    padding-right: var(--pad-right);
     justify-content: space-between;
     background-color: var(--light-shade);
     padding-left: 13.8rem;
@@ -54,7 +56,9 @@ body {
 
 .header-content {
     display: flex;
-    width: 100vw;
+    width: 100%;
+    padding-left: var(--pad-left);
+    padding-right: var(--pad-right);
     align-items: center;
 }
 
@@ -118,7 +122,8 @@ body {
     justify-content: end;
     align-items: center;
     height: 4.5rem;
-    padding-right: 2.3rem;
+    padding-left: var(--pad-left);
+    padding-right: var(--pad-right);
     background-color: var(--light-accent);
 }
 
