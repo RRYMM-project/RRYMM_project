@@ -1,107 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer tools</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/dev-tools-style.css" />
-  </head>
-  <body>
-    <div class="root">
-      <!-- HEADER -->
-      <header class="header-wrap container">
-        <div>
-          <a href="index.html">
-            <img src="./header-logo.svg" alt="logo" class="logo-svg" />
-          </a>
-        </div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li>
-              <a href="index.html">Home page</a>
-            </li>
-            <li>
-              <a href="developer-tools.html" class="active-link"
-                >Developer tools</a
-              >
-            </li>
-            <li>
-              <a href="account.html">Account</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
 
-      <!-- SEARCH section -->
-      <div class="search-wrap container">
-        <input
-          type="search"
-          id="search-content"
-          placeholder="Search"
-          class="search-input"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/dev-tools-style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="root">
+    <!-- HEADER -->
+    <header class="header-wrap container">
+      <div>
+        <a href="index.html">
+          <img src="./images/header-logo.svg" alt="logo" class="logo-svg" />
+        </a>
       </div>
-      <!-- TOOLS SECTION -->
-      <div class="tools-section">
-        <div class="title-container">
-          <h2 class="tools-title">The magical word of programming</h2>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home page</a>
+          </li>
+          <li>
+            <a href="developer-tools.html" class="active-link">Developer tools</a>
+          </li>
+          <li>
+            <a href="account.html">Account</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SEARCH section -->
+    <div class="search-wrap container">
+      <div class="search-input-wrap">
+        <input type="text" id="search-content" placeholder="Search" class="search-input" />
+      </div>
+
+    </div>
+
+    <!-- TOOLS SECTION -->
+    <div class="tools-section">
+      <div class="title-container">
+        <h2 class="tools-title">The magical word of programming</h2>
+      </div>
+      <div class="tools-grid-container">
+        <div class="grid-item">
+          <a href="#html">HTML</a>
         </div>
-        <div class="tools-grid-container">
-          <div class="grid-item">
-            <a href="#html">HTML</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">CSS</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">SQL</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">Python</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">GitHub</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">Trello</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">Figma</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">JavaScript</a>
-          </div>
-          <div class="grid-item">
-            <a href="#">PHP</a>
-          </div>
+        <div class="grid-item">
+          <a href="#">CSS</a>
+        </div>
+        <div class="grid-item">
+          <a href="#">SQL</a>
+        </div>
+        <div class="grid-item">
+          <a href="#">Python</a>
+        </div>
+        <div class="grid-item">
+          <a href="#">GitHub</a>
+        </div>
+        <div class="grid-item">
+          <a href="#">Trello</a>
+        </div>
+        <div class="grid-item">
+          <a href="#">Figma</a>
+        </div>
+        <div class="grid-item">
+          <a href="#">JavaScript</a>
+        </div>
+        <div class="grid-item">
+          <a href="#">PHP</a>
         </div>
       </div>
-      <!-- SLIDER -->
-       <div class="tools-slider-container container">
-       <div class="title-container">
+    </div>
+
+    <!-- SLIDER -->
+    <div class="tools-slider-container container">
+      <div class="title-container">
         <h2 class="tools-title slider-title">Let's explore developer tools together</h2>
       </div>
-<div class="slider-wrap">
-<div class="slider-cards">
-<div>
-  CARD 1
-</div>
-<div>
-  CARD 2
-</div>
-</div>
-<div class="pagination-wrap">
-  dots
-</div>
-</div>
-       </div>
+      <!-- SWIPER -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-card">
+              <div class="card-links">
+                <div>
+                  <h3 class="slide-card-title">Useful links Slide1</h3>
+                  <ol class="card-link-list">
+                    <li class="card-link-item">
+                      <p class="link-item-name">W3Schools tutorials:</p>
+                      <a href="https://www.w3schools.com/css/default.asp">https://www.w3schools.com/css/</a>
+                    </li>
+                    <li class="card-link-item">
+                      <p class="link-item-name">MDN resource:</p>
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a>
+                    </li>
+                    <li class="card-link-item">
+                      <p class="link-item-name">Codecademy:</p>
+                      <a href="https://www.codecademy.com/resources/docs/css">www.codecademy.com/resources/docs/css</a>
+                    </li>
+                  </ol>
+                </div>
+                <button class="card-link-list-btn">Learn more</button>
+              </div>
+              <div class="slide-card-descript">
+                <h3 class="slide-card-title icon icon-css">CSS</h3>
+                <p class="card-descript-text">
+                  Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a
+                  document written in a markup language such as HTML or XML.
+                </p>
+                <p></p>
+              </div>
+
+            </div>
+            
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-card">
+              <div class="card-links">
+                <div>
+                  <h3 class="slide-card-title">Useful links Slide2</h3>
+                  <ol class="card-link-list">
+                    <li class="card-link-item">
+                      <p class="link-item-name">W3Schools tutorials:</p>
+                      <a href="https://www.w3schools.com/html/default.asp">www.w3schools.com/html/</a>
+                    </li>
+                    <li class="card-link-item">
+                      <p class="link-item-name">MDN resource:</p>
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org/en-US/docs/Web/HTML</a>
+                    </li>
+                    <li class="card-link-item">
+                      <p class="link-item-name">Codecademy:</p>
+                      <a href="https://www.codecademy.com/resources/docs/html">www.codecademy.com/resources/docs/html</a>
+                    </li>
+                  </ol>
+                </div>
+                <button class="card-link-list-btn">Learn more</button>
+              </div>
+              <div class="slide-card-descript">
+                <h3 class="slide-card-title icon icon-html">HTML</h3>
+                <p class="card-descript-text">
+                  HTML or Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.
+                </p>
+                <p></p>
+              </div>
+
+            </div>
+ 
+          </div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+
 </html>
