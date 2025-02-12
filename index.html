@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RRYMM - Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles/style.css"/>
-  </head>
-  <body>
-    <div class="container">
-      <header class="main-header">
-        <a href="index.html" class="logo-button">
-          <img src="kuva.jpg" alt="logo-button" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/dev-tools-style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="root">
+    <!-- HEADER -->
+    <header class="header-wrap container">
+      <div>
+        <a href="index.html">
+          <img src="./images/header-logo.svg" alt="logo" class="logo-svg" />
         </a>
-        <nav class="header-nav">
-          <a href="index.html">Home page</a>
-          <a href="./developer-tools.html">Developer tools</a>
-          <a href="account.html">Account</a>
-        </nav>
-      </header>
-      <div class="search-section">
-        <input placeholder="search..." />
-        <button class="btn-search">search</button>
       </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home page</a>
+          </li>
+          <li>
+            <a href="developer-tools.html" class="active-link">Developer tools</a>
+          </li>
+          <li>
+            <a href="account.html">Account</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SEARCH section -->
+    <div class="search-wrap container">
+      <div class="search-input-wrap">
+        <input type="text" id="search-content" placeholder="Search" class="search-input" />
+      </div>
+
     </div>
-  </body>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- LEFT section -->
+  <div class="item1 footer-text">
+    <p>Subscribe to our newsletter for the latest updates on features and releases.</p>
+  </div>
+  <input class="item2 input-email" type="text" placeholder="Your email here">
+  <button type="button" class="item3 btn-yellow">Join</button>
+  <div class="item4 footer-text">
+    <p>By subscribing, you consent to our Privacy Policy and agree to receive updates.</p>
+  </div>
+      <!-- MIDDLE section -->
+  <h3 class="item5 footer-h3">Quick links</h3>
+  <ul class="footer-nav">
+    <li class="footer-nav-link"><a>Home page</a></li>
+    <li class="footer-nav-link"><a>Developer tools</a></li>
+    <li class="footer-nav-link"><a>Sign Up</a></li>
+  </ul>
+    <!-- RIGHT section -->
+
+</footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+
 </html>
