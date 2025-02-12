@@ -7,7 +7,7 @@
     --active-color: #f18758;
     --default-bcg: rgb(255,255,255);
     --default-text-color: rgb(0,0,0);
-    --brand-font: "Monoton", serif;
+    --main-font: "Roboto", serif;
 }
 
 * {
