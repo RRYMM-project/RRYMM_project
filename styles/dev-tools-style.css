@@ -75,32 +75,31 @@
   padding: 6.94rem var(--pad-left);
 }
 .title-container {
-  position: relative;
   width: 100%;
   margin-bottom: 6rem;
+  text-align: right;
 }
 .tools-title {
   color: var(--info-color);
   width: 100%;
-  text-align: right;
   display: inline-block;
   position: relative;
 }
 .tools-title::after {  /* bottom line in the h2*/
   content: "";
   position: absolute;
-  bottom: 0.438rem;
-  right: -15.6rem;
-  width: 24.6rem;
+  bottom: 0.38rem;
+  right: -13.7rem;
+  width: 19.5rem;
   height: 1px;
   background-color: var(--info-color);
-}
+} 
 .tools-grid-container {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 33%;
   gap: 2.25rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .grid-item {
   width: 16rem;
@@ -151,7 +150,7 @@
 .slider-title::after {
   content: "";
   position: absolute;
-  bottom: 0.438rem;
+  bottom: 0.38rem;
   left: -15.6rem;
   width: 24.6rem;
   height: 1px;
@@ -159,26 +158,53 @@
 }
 /* SWIPER */
 .swiper {
-  width: 65.625rem;
+  width: 90%;
   height: 45.313rem;
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
 }
 .swiper-slide{
   margin-left: 3px;
+
 }
-.swiper-button-next, .swiper-button-prev{
-  color: white;
+.swiper-button-next, 
+.swiper-button-prev{
+  color: var(--light-accent);
+  font-weight: 900;
+  transition: filter 0.5s ease;
 }
+.swiper-button-next:hover, 
+.swiper-button-prev:hover{
+filter: blur(2px);
+}
+
+.swiper-pagination-bullet{
+  border: 3px solid white;
+  background-color: transparent;
+  width: 1rem;
+  height: 1rem;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+.swiper-pagination-bullet:hover{
+  filter: blur(2px);
+  opacity: 0.8;
+}
+.swiper-pagination-bullet-active{
+  background-color: white;
+}
+.swiper-pagination-bullet-active:hover{
+  filter: none;
+  opacity: 1;
+}
+
 .slide-card{
+  box-sizing: border-box;
   margin-top: 2.188rem;
   display: flex;
   flex-direction: column;
-  padding-left: 1.563rem;
-  padding-right: 1.563rem;
+  padding-left: 6%;
+  padding-right: 6%;
   background-color: var(--light-shade);
   border-radius: 10px;
-  width: 28.125rem;
+  width: auto; 
   height: 38.688rem;
   box-shadow: 0 0.25rem 0.25rem rgb(0, 0, 0, 0.25), 0.125rem 0.125rem 0.25rem rgb(0, 0, 0, 0.25);
   
