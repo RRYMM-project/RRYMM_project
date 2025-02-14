@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const swiper = new Swiper('.swiper',{
             direction: 'horizontal',
             loop: true,
+            roundLengths: true,
         
             pagination:{
                 el: '.swiper-pagination',
@@ -16,9 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 prevEl: '.swiper-button-prev',
                 clickable: true,
             },
-            slidesPerView:2,
-            spaceBetween: 30,
+            slidesPerView: "auto",
+            speed: 500,
             keyboard:true,
+            breakpoints:{
+                1300:{
+                    slidesPerView:2,
+                    spaceBetween: 15,
+                },
+                1600:{
+                    spaceBetween: 25,
+                },
+                1700:{
+                    slidesPerView:3,
+                    spaceBetween: 10,
+                },
+            }
         });     
     } else {
         console.error("Swiper didn't load");
