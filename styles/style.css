@@ -42,7 +42,9 @@ a {
     padding-right: var(--pad-right);
 }
 
+
 /* HEADER section */
+
 .header-wrap {
     height: 4.5rem;
     display: flex;
