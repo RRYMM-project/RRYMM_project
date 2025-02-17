@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     if (typeof Swiper !== "undefined") {
+        console.log("Swiper loaded!");
         const swiper = new Swiper('.swiper',{
             direction: 'horizontal',
             loop: true,
