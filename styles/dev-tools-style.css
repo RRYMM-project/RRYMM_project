@@ -267,6 +267,8 @@ background-repeat: no-repeat;
 background-position: center;
 margin-right: 0.5rem;
 height: 0.95rem;
+width: 1.125rem;
+background-size: contain;
 }
 .icon-html::before{
   background-image: url('../images/icon-html.svg');
@@ -275,7 +277,34 @@ height: 0.95rem;
 }
 .icon-css::before{
   background-image: url('../images/icon-css.svg');
-  width: 1.125rem;
+}
+.icon-figma::before{
+  background-image: url('../images/icon-figma.svg');
+
+}
+.icon-sql::before{
+  background-image: url('../images/icon-sql.svg');
+
+}
+.icon-github::before{
+  background-image: url('../images/icon-github.svg');
+
+}
+.icon-trello::before{
+  background-image: url('../images/icon-trello.svg');
+
+}
+.icon-javascript::before{
+  background-image: url('../images/icon-javascript.svg');
+
+}
+.icon-php::before{
+  background-image: url('../images/icon-php.svg');
+
+}
+.icon-python::before{
+  background-image: url('../images/icon-python.svg');
+
 }
 .card-link-list{
   color: var(--dark-shade);
