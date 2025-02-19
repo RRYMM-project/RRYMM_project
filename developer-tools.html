@@ -10,10 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
+    <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> <!-- Initialization of swiper-bundle.min.css must come before the main style -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dev-tools-style.css" />
   </head>
@@ -44,24 +43,11 @@
         </nav>
       </header>
 
-      <!-- SEARCH section -->
-      <div class="search-wrap container">
-        <div class="search-input-wrap">
-          <input
-            type="text"
-            id="search-content"
-            placeholder="Search"
-            class="search-input"
-          />
-        </div>
-      </div>
-
     
     </div>
 
-
-    <script src="./js/swiper.js"></script>
-    <script type="module" src="./js/dev-tools.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/search.js"></script>
+    <script type="module" defer src="./js/dev-tools.js"></script>
+       
   </body>
 </html>
