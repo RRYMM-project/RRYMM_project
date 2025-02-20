@@ -230,10 +230,7 @@ footer {
 /* Footer RIGHT */
 
 .footer-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    background-image: url(images/logo-footer.svg);
 }
 
 
@@ -277,4 +274,5 @@ footer {
 
 .footer-btm-link {
     color: var(--info-color);
+    text-decoration: underline;
 }
