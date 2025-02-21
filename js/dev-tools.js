@@ -1,11 +1,6 @@
 import { devTools } from "./data.js";
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-// console.log(devTools[0].name);
-// console.log(devTools[1].description);
-// console.log(devTools.length);
-// console.log(devTools[0]["usefulLinks"][0].nameLink);
-
 function handleOnLoad(e) {
   const toolsSection = createToolsSection();
   document.getElementById("root").appendChild(toolsSection);
@@ -39,7 +34,7 @@ function handleOnLoad(e) {
           clickable: true,
       },
       slidesPerView: "auto",
-      speed: 500,
+      speed: 1000,
       keyboard:true,
       breakpoints:{
           1300:{
