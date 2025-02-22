@@ -6,3 +6,14 @@ fetch('./header.html')
     document.getElementById('main-header').innerHTML = html;
   })
   .catch(error => console.error('Virhe haettaessa headeria:', error));
+
+
+  // Hamburger menu
+
+  const hamburger = document.getElementById("hamburger");
+  const navList = document.getElementById("nav-list");
+
+  hamburger.addEventListener('click', () => {
+    console.log("click on the hamburger");
+    navList.classList.toggle('show');
+  })

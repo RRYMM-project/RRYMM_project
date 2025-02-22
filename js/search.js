@@ -1,6 +1,5 @@
 function createSearchSection() {
-  const searchWrap = createDivWithClassAndId("search-wrap", null);
-  searchWrap.classList.add("container");
+  const searchWrap = createDivWithClassContainer("search-wrap");
   const searchInputWrap = createDivWithClassAndId("search-input-wrap", null);
   searchInputWrap.id = 'search-input-wrap';
   const searchInput = document.createElement("input");
@@ -12,6 +11,7 @@ function createSearchSection() {
   searchInputWrap.appendChild(searchInput);
   const backspaceIcon = document.createElement("span");
   backspaceIcon.classList.add("material-symbols-outlined");
+  backspaceIcon.classList.add("backspace-icon");
   backspaceIcon.id = "backspace-icon";
   backspaceIcon.innerText = "backspace";
   searchInputWrap.appendChild(backspaceIcon);
@@ -35,6 +35,14 @@ function createDivWithClassAndId(className = "", id = "") {
     div.id = id;
   }
 
+  return div;
+}
+
+// Function for creating div with class container:
+function createDivWithClassContainer(className) {
+  const div = document.createElement("div");
+  div.classList.add("container");
+  div.classList.add(className);
   return div;
 }
 

@@ -49,15 +49,29 @@ a {
 }
 
 .logo-svg {
-    /* height : 2.5rem; */
     width: 13.24rem;
 }
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
 
+}
 .nav-list {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
     text-transform: uppercase;
+    
+}
+.hamburger{
+    background-color: transparent;
+    border: none;
+    height: 3.056rem;
+    cursor: pointer;
+    display: none;
+
 }
 
 a:hover {
@@ -67,14 +81,6 @@ a:hover {
 .active-link{
     color: var(--active-color);
 }
-
-/* a::after {
-    color: ;
-} */
-
-/* li{
-    list-style: none;
-} */
 
 ul {
     list-style: none;
@@ -143,7 +149,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 
 .footer-h3 {
     font-family: var(--main-font);
@@ -220,4 +225,97 @@ footer {
 .footer-btm-link {
     color: var(--info-color);
     text-decoration: underline;
+}
+
+
+/* RESPONSIVE DESIGN HEADER*/
+
+@media screen and (min-width: 1600px) {
+    nav a{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header-wrap{
+        padding-left: 8rem;
+        padding-right: 8rem; 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-svg{
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo-svg{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-wrap{
+        padding-left: 6rem;
+        padding-right: 6rem; 
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header-wrap{
+        padding-left: 4rem;
+        padding-right: 4rem; 
+    }
+    .logo-svg{
+        width: 8rem;
+    }
+    .nav-list{
+        gap: 1rem;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .header-wrap{
+        padding-left: 4.5rem;
+        padding-right: 4.5rem; 
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 540px) {
+      .nav-list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .nav-list.show{
+        display: flex;
+        width: 100%;
+        font-size: 1.05rem;
+        z-index: 10;
+        background-color: var(--light-accent);
+        position: absolute;
+        top: 3.75rem;
+        right: 0;
+        padding: 2rem 4.5rem;
+        text-align: right;
+        /* transition: all 3s; */
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-wrap{
+        padding-left: 2rem;
+        padding-right: 2rem; 
+    }
+    .nav-list.show{
+        padding: 2rem 2rem;
+    }
 }

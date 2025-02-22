@@ -48,12 +48,12 @@ input {
 .search-input-wrap:focus-within {
   box-shadow: 0 0 8px var(--dark-accent);
 }
-.material-symbols-outlined{
+.backspace-icon{
   padding-right: 1.75rem;
   color: var(--dark-accent);
   visibility: hidden;
 }
-.material-symbols-outlined:hover{
+.backspace-icon:hover{
   color: var(--light-accent);
 }
 .visible-icon{

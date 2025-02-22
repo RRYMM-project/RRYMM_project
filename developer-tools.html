@@ -10,12 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=backspace" />
-    <link rel="stylesheet"
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=backspace"
+  />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> <!-- Initialization of swiper-bundle.min.css must come before the main style -->
+    />
+    <!-- Initialization of swiper-bundle.min.css must come before the main style -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/search.css">
+    <link rel="stylesheet" href="./styles/search.css" />
     <link rel="stylesheet" href="./styles/dev-tools-style.css" />
   </head>
 
@@ -25,11 +30,14 @@
       <header class="header-wrap container">
         <div>
           <a href="index.html">
-            <img src="./images/header-logo.svg" alt="logo" class="logo-svg" />
+            <img src="./images/logo-header.svg" alt="logo" class="logo-svg" />
           </a>
         </div>
-        <nav class="nav">
-          <ul class="nav-list">
+        <nav class="nav" id="nav">
+          <button class="hamburger" id="hamburger">
+            <img src="./images/hamburger-icon.svg" alt="menu" height="48" id="hamburger-icon">
+          </button>
+          <ul class="nav-list" id="nav-list">
             <li>
               <a href="index.html">Home page</a>
             </li>
@@ -43,13 +51,11 @@
             </li>
           </ul>
         </nav>
-
       </header>
-    
     </div>
 
+    <script src="./js/header.js"></script>
     <script defer src="./js/search.js"></script>
     <script type="module" defer src="./js/dev-tools.js"></script>
-       
   </body>
 </html>
