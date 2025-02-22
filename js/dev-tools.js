@@ -56,7 +56,7 @@ function handleOnLoad(e) {
 function createToolsSection() {
   const toolsSectionDiv = createDivWithClassContainer("tools-section");
 
-  const titleDiv = createTitleDiv("The magical word of programming", null);
+  const titleDiv = createTitleDiv("The magical world of programming", null);
 
   const gridContainerDiv = document.createElement("div");
   gridContainerDiv.classList.add("tools-grid-container");
