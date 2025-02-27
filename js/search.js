@@ -1,13 +1,15 @@
 function createSearchSection() {
   const searchWrap = createDivWithClassContainer("search-wrap");
   const searchInputWrap = createDivWithClassAndId("search-input-wrap", null);
-  searchInputWrap.id = 'search-input-wrap';
+  searchInputWrap.id = "search-input-wrap";
+  searchInputWrap.addEventListener("click", getUsersRequest);
   const searchInput = document.createElement("input");
   searchInput.setAttribute("type", "text");
   searchInput.id = "search-content";
   searchInput.setAttribute("placeholder", "Search");
   searchInput.classList.add("search-input");
-  searchInput.addEventListener('input', handleOnInput);
+  searchInput.addEventListener("input", handleOnInput);
+  searchInput.addEventListener("keypress", getUsersRequest);
   searchInputWrap.appendChild(searchInput);
   const backspaceIcon = document.createElement("span");
   backspaceIcon.classList.add("material-symbols-outlined");
@@ -51,24 +53,42 @@ addEventListener("load", handleOnLoad);
 function handleOnInput(e) {
   const usersInput = e.target.value;
   const bckspaceIcon = document.getElementById("backspace-icon");
-  console.log(bckspaceIcon);
+  // console.log(bckspaceIcon);
   if (usersInput != null) {
     bckspaceIcon.classList.add("visible-icon");
-    bckspaceIcon.addEventListener('click', clearInputValue);
-  } 
+    bckspaceIcon.addEventListener("click", clearInputValue);
+  }
   if (usersInput == "") {
     bckspaceIcon.classList.remove("visible-icon");
-    bckspaceIcon.removeEventListener('click', clearInputValue);
-  } 
-
+    bckspaceIcon.removeEventListener("click", clearInputValue);
+  }
 }
 
 function clearInputValue(e) {
-  console.log(e.target);
+  // console.log(e.target);
   const element = e.target;
-  const elToClear = document.getElementById('search-content');
-  console.log(elToClear.value);
+  const elToClear = document.getElementById("search-content");
+  // console.log(elToClear.value);
   elToClear.value = "";
   element.classList.remove("visible-icon");
+  const elementToShow = document.getElementById("swiper");
+  elementToShow.style.display = "block";
+}
+
+function getUsersRequest(e) {
+  // Click on Enter:
+  const elementToSearch = document.getElementById("search-content");
+  const elementToHide = document.getElementById("swiper");
+  if (e.key === "Enter") {
+    console.log("User clicked Enter:", elementToSearch.value);
+    elementToHide.style.display = "none";
+  }
+  const iconElement = document.getElementById("search-input-wrap");
+  // Click on the icon Search:
+  if (e.target === iconElement) {
+    console.log("User clicked on icon-search:", elementToSearch.value);
+    elementToHide.style.display = "none"
+  }
   
+  return elementToSearch;
 }
