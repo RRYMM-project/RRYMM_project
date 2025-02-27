@@ -50,7 +50,7 @@ function handleOnLoad(e) {
           },
       }
   });   
-  console.log(typeof Swiper);
+  // console.log(typeof Swiper);
 }
 
 function createToolsSection() {
@@ -83,7 +83,7 @@ function createSliderSection() {
     "slider-title"
   );
 
-  const swiper = createDivWithClassAndId("swiper", null);
+  const swiper = createDivWithClassAndId("swiper", "swiper");
   // console.log("!!!!!!!!!!!!!!!", swiper);
   const swiperWrapper = createDivWithClassAndId("swiper-wrapper", null);
 

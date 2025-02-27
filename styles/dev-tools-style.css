@@ -1,12 +1,17 @@
-.root {
+#root {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  /* display: grid;
+  grid-template-rows: auto auto 1fr 1fr; */
 }
 .tools-section {
   display: flex;
   flex-direction: column;
   background-color: var(--light-shade);
   padding: 6.94rem var(--pad-left);
+  margin-top: 9rem;
+  overflow-y: auto;
 }
 .title-container {
   width: 100%;
@@ -293,6 +298,7 @@
   .search-wrap{
     padding-left: 8rem;
     padding-right: 8rem;
+    width: calc(100% - 16rem);
   }
   .title-container{
     margin-bottom: 4.5rem;
@@ -310,6 +316,7 @@
   .search-wrap{
     padding-left: 6rem;
     padding-right: 6rem;
+    width: calc(100% - 12rem);
   }
   .title-container{
     margin-bottom: 4rem;
@@ -330,6 +337,7 @@
   .search-wrap{
     padding-left: 4.5rem;
     padding-right: 4.5rem;
+    width: calc(100% - 9rem);
   }
   .title-container{
     margin-bottom: 3.2rem;
@@ -346,6 +354,7 @@
   .search-wrap{
     padding-left: 2rem;
     padding-right: 2rem;
+    width: calc(100% - 4rem);
   }
   .tools-title{
     font-size: 1.25rem;

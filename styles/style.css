@@ -46,6 +46,10 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-shade);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: calc(100% - 27.5rem);
 }
 
 .logo-svg {
@@ -240,6 +244,7 @@ footer {
     .header-wrap{
         padding-left: 8rem;
         padding-right: 8rem; 
+        width: calc(100% - 16rem);
     }
 }
 
@@ -259,6 +264,7 @@ footer {
     .header-wrap{
         padding-left: 6rem;
         padding-right: 6rem; 
+        width: calc(100% - 12rem);
     }
 }
 
@@ -266,6 +272,7 @@ footer {
     .header-wrap{
         padding-left: 4rem;
         padding-right: 4rem; 
+        width: calc(100% - 8rem);
     }
     .logo-svg{
         width: 8rem;
@@ -281,7 +288,8 @@ footer {
     .header-wrap{
         padding-left: 4.5rem;
         padding-right: 4.5rem; 
-        position: relative;
+        /* position: relative; */
+        width: calc(100% - 9rem);
     }
 }
 
@@ -289,20 +297,21 @@ footer {
       .nav-list{
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 100%;;
         
     }
     .nav-list.show{
         display: flex;
         width: 100%;
         font-size: 1.05rem;
-        z-index: 10;
+        /* z-index: 1400; */
         background-color: var(--light-accent);
         position: absolute;
         top: 3.75rem;
         right: 0;
         padding: 2rem 4.5rem;
         text-align: right;
+        border: 1px solid red;
         /* transition: all 3s; */
     }
     .hamburger{
@@ -314,6 +323,7 @@ footer {
     .header-wrap{
         padding-left: 2rem;
         padding-right: 2rem; 
+        width: calc(100% - 4rem);
     }
     .nav-list.show{
         padding: 2rem 2rem;
