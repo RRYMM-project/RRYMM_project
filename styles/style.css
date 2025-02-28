@@ -184,9 +184,8 @@ footer {
 /* Footer RIGHT */
 
 .footer-right {
-    background-image: url(images/logo-footer.svg);
+    background-image: url(../images/logo-footer.png);
 }
-
 
 /* Footer LINE */
 
@@ -197,7 +196,6 @@ footer {
     margin-right: 3.969rem;
     margin-top: 2.5rem;
 }
-
 
 /* Footer BOTTOM */
 
@@ -300,18 +298,20 @@ footer {
         width: 100%;;
         
     }
+    .search-wrap.show{
+        z-index: 1;
+    }
     .nav-list.show{
         display: flex;
-        width: 100%;
+        width: 95%;
         font-size: 1.05rem;
-        /* z-index: 1400; */
         background-color: var(--light-accent);
         position: absolute;
-        top: 3.75rem;
+        top: 4.5rem;
         right: 0;
-        padding: 2rem 4.5rem;
+        padding: 2rem 4.5rem 2rem 0;
         text-align: right;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         /* transition: all 3s; */
     }
     .hamburger{

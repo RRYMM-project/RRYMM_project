@@ -7,13 +7,16 @@
 //   })
 //   .catch(error => console.error('Virhe haettaessa headeria:', error));
 
+// Hamburger menu
 
-  // Hamburger menu
+const hamburger = document.getElementById("hamburger");
+const navList = document.getElementById("nav-list");
 
-  const hamburger = document.getElementById("hamburger");
-  const navList = document.getElementById("nav-list");
-
-  hamburger.addEventListener('click', () => {
-    console.log("click on the hamburger");
-    navList.classList.toggle('show');
-  })
+hamburger.addEventListener("click", () => {
+  console.log("click on the hamburger");
+  navList.classList.toggle("show");
+  if (document.getElementById("search-wrap")) {
+    const searchContainer = document.getElementById("search-wrap");
+    searchContainer.classList.toggle("show");
+  }
+});

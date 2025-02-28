@@ -1,5 +1,6 @@
 function createSearchSection() {
   const searchWrap = createDivWithClassContainer("search-wrap");
+  searchWrap.id = "search-wrap";
   const searchInputWrap = createDivWithClassAndId("search-input-wrap", null);
   searchInputWrap.id = "search-input-wrap";
   searchInputWrap.addEventListener("click", getUsersRequest);
