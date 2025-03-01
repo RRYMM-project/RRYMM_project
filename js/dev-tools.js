@@ -4,8 +4,10 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 function handleOnLoad(e) {
   const toolsSection = createToolsSection();
   document.getElementById("root").appendChild(toolsSection);
+  console.log("Tools section loaded");
   const sliderSection = createSliderSection();
   document.getElementById("root").appendChild(sliderSection);
+  console.log("Slider section loaded");
 
   const swiperContainer = document.querySelector(".swiper");
     if (!swiperContainer) {
