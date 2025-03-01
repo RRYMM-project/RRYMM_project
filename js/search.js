@@ -26,6 +26,7 @@ function createSearchSection() {
 function handleOnLoad(e) {
   const searchSection = createSearchSection();
   document.getElementById("root").appendChild(searchSection);
+  console.log("Search section loaded");
 }
 
 // Function for creating div with class and ID:

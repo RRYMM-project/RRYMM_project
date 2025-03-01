@@ -92,24 +92,35 @@ ul {
 
 /* FOOTER */
 
+.temp-about-us{
+    height: 400px;
+    /* width: 100%; */
+    margin-top: 4.5rem;
+    padding-left: var(--pad-left);
+    padding-right: var(--pad-right);
+}
+
 footer {
     /* height: 27.38rem; */
+    /* width: 100%; */
     padding-top: 2.5rem;
     background-color: var(--light-shade);
     display: flex;
     flex-direction: column;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
+    padding-left: var(--pad-left);
+    padding-right: var(--pad-right);
 }
 
 .footer-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: var(--pad-left);
-    padding-right: var(--pad-right);
+    /* padding-left: var(--pad-left);
+    padding-right: var(--pad-right); */
 }
 
 
@@ -183,25 +194,25 @@ footer {
 
 /* Footer RIGHT */
 
-.footer-right {
+/* .footer-right {
     background-image: url(../images/logo-footer.png);
-}
+} */
 
 /* Footer LINE */
 
 .horizontal-line {
     border: solid 0.063rem;
     color: var(--info-color);
-    margin-left: 3.969rem;
-    margin-right: 3.969rem;
+    /* margin-left: 3.969rem;
+    margin-right: 3.969rem; */
     margin-top: 2.5rem;
 }
 
 /* Footer BOTTOM */
 
 .footer-btm {
-    padding-left: var(--pad-left);
-    padding-right: var(--pad-right);
+    /* padding-left: var(--pad-left);
+    padding-right: var(--pad-right); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
