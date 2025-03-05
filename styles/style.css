@@ -94,7 +94,7 @@ ul {
 /* ABOUT US PAGE */
 
 .our-goal {
-    margin-top: 96px;
+    margin-top: 98px;
     text-align: center;
     padding: 64px 32px;
     background: linear-gradient(135deg, #f18758, #eec77c);
@@ -199,15 +199,16 @@ h3 {
 }
 
 .member-photo {
-    width: 100%;
+    width: 250px;
     height: 250px;
+    object-fit: cover;
     background-color: var(--light-accent);
     border-radius: 10px;
     margin-bottom: 16px;
 }
 
 .team-member h3 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 16px;
 }
 
@@ -558,7 +559,7 @@ footer {
 }
 
 @media screen and (max-width: 540px) {
-      .nav-list{
+    .nav-list{
         display: none;
         flex-direction: column;
         width: 100%;;
